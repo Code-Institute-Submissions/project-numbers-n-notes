@@ -8,8 +8,31 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+    
     <h1>Notes 'n Numbers!</h1>
-    <div id="diceclm"><h3>Dice</h3></div>
-    <div id="notesclm"><h3>Notes</h3></div>
+    
+    <div id="diceclm">
+        
+        <h2 id="dicename">Random Number Generator</h2>
+        <div class="randomNumber">
+            <span>?</span>
+        </div>
+        <button class="btn" onclick="roll()">Roll</button>
+
+    </div>
+    
+    
+    <div id="notesclm">
+        
+        <h2>Notes</h2>
+        <input id="inputField" type="text">
+        <button id="addToDo" class="btn">Write it!</button>
+        <div class="to-dos" id="toDoContainer"></div>
+
+    </div>
+
+    <script src="../assets/java/script.js"></script>
+
 </body>
+
 </html>
