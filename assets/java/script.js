@@ -15,16 +15,16 @@ addToDoButton.addEventListener('click', function(){
     inputField.value = "";
     paragraph.addEventListener('dblclick',function(){
         toDoContainer.removeChild(paragraph);
-    })
-})
+    });
+});
 
-var button = document.getElementById("myButton")
-var number = document.getElementById("number")
+var button = document.getElementById("myButton");
+var number = document.getElementById("number");
 
-number.innerHTML = "0"
+number.innerHTML = "0";
 
-var min = 1
-var max = 7
+var min = 1;
+var max = 7;
 
 function generateNumber() {
     var random = Math.floor((Math.random() * (max-min) + min ));
@@ -34,4 +34,4 @@ function generateNumber() {
 button.addEventListener("click", function (){
     var result = generateNumber();
     number.innerHTML = result;
-})
+});
