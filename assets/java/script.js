@@ -18,3 +18,20 @@ addToDoButton.addEventListener('click', function(){
     })
 })
 
+var button = document.getElementById("myButton")
+var number = document.getElementById("number")
+
+number.innerHTML = "0"
+
+var min = 1
+var max = 7
+
+function generateNumber() {
+    var random = Math.floor((Math.random() * (max-min) + min ));
+    return random;
+}
+ 
+button.addEventListener("click", function (){
+    var result = generateNumber();
+    number.innerHTML = result;
+})
