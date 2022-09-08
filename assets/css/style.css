@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+div {
+    text-align: center;
+}
+
+#diceclm {
+    width: 50%;
+    background-color: red;
+    float: left;
+}
+
+#notesclm {
+    width: 50%;
+    background-color: blue;
+    float: right;
+}
